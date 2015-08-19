@@ -1,0 +1,32 @@
+<div class="row" style="padding-top: 25px;">
+  <row ng-hide="main.isLoggedIn">
+    <h3>Connect to Office 365 to get your emails.</h3>
+  </row>
+  
+	<row ng-show="main.emails">
+    <div class="row">
+      <table class="table table-hover">
+        <thead>
+          <tr>
+            <th class="col-sm-1">From</th>
+            <th class="col-sm-1">Subject</th>
+            <th class="col-sm-3">Body Preview</th>
+            <th class="col-sm-1">Web Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr ng-repeat="email in main.emails">
+            <td style="word-wrap: break-word;">{{email.Sender.EmailAddress.Name}} </td>
+            <td>{{email.Subject}}</td>
+            <td>{{email.BodyPreview}}</td>
+            <td><a href={{email.WebLink}}>View on OWA</a></td>
+          </tr>
+
+          <tr ng-if="main.emails.length == 0">
+            <td colspan="4" align="center">Your inbox is empty.</td>
+          </tr>
+        </tbody>
+      </table>
+    </div>
+  </row>
+</div>
