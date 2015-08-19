@@ -6,6 +6,8 @@ An Angular app with a Node backend using Express (no Mongo, thus EAN) demonstrat
 * Getting an access token to the [Office 365 unified API]() using the passport-azure-oauth
 * Making API requests to the Office 365 unified API
 
+![App screenshot](./screenshot.png)
+
 ## Directory structure
     +--- server.js                        // The entry point of the server.	           
     |
