@@ -3,7 +3,7 @@
 An Angular app with a Node backend using Express (no Mongo, thus EAN) demonstrating:
 
 * Authentication with Azure AD via Node using [PassportJS]() and the [passport-azure-oauth]() strategy
-* Getting an access token to the [Office 365 unified API]() using the passport-azure-oauth
+* Getting an access token to the [Office 365 unified API]() using the passport-azure-oauth strategy
 * Making API requests to the Office 365 unified API
 
 ![App screenshot](./screenshot.png)
@@ -52,3 +52,8 @@ The server will start on port 8080 (unless configured differently in *server.js*
 
 * If you have any trouble running this sample, please [log an issue](https://github.com/martellaj/O365-EAN-Example/issues).
 * For any other comments, get at me on [Twitter](http://www.twitter.com/martellaj).
+* **This is my first dance with PassportJS. If you've spotted any errors or know how I can improve this code, please let me know or submit a pull request!**
+
+## Legal
+
+In no way is this project associated with Microsoft or Office 365. 
